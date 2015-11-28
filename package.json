@@ -1,0 +1,22 @@
+{
+	"name": "FindSuperman",
+	"version": "0.0.1",
+	"author": "Apoorv Parijat",
+	"description": "Code designed to find superman",
+	"dependencies": {
+		"underscore": "1.6.x"
+	},
+	"devDependencies": {
+		"browserify": "latest",
+		"watchify": "latest",
+		"grunt": "~0.4.0",
+		"grunt-browserify": "latest",
+		"grunt-contrib-watch": "latest",
+		"gulp": "latest",
+		"vinyl-source-stream": "latest"
+	},
+	"scripts": {
+		"build-js": "browserify js/main.js > build/output.js -dv",
+		"watch-js": "watchify js/main.js -o build/output.js -dv"
+	}
+}
